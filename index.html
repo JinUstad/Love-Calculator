@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./style.css">
+<title>Love Calculator</title>
+</head>
+<body>
+      <header>
+        <div class="card w-50 m-auto text-center">
+            <div class="card-header bg-danger">Love Calculator</div>
+            <div class="card-body ">
+                <form class="form-inline w-75 m-auto">
+                       <div class="form-group">
+                           <input type="text" class="form-control text-center" id="name" placeholder="name" />
+                           <span id="error"></span>
+                       </div>
+
+                       <div>
+                           <span class="pl-4 pr-4"> + </span>
+                       </div>
+
+                       <div class="form-group">
+                        <input type="text" class="form-control text-center" id="name2" placeholder="Love Name" required/>
+                    </div>
+                </form>
+                <br>
+                <div class="w-50 m-auto">
+                    <button class="btn btn-success w-75" onclick="checkLove()">Click</button>
+                </div>
+               <br>
+                <div>
+                    <input type="text" class="form-control text-center w-auto m-auto loveValue" id="lovevalue" placeholder="Love Percentage">
+                </div>
+                <!-- <br>
+                <div>
+                    <h4 class="heading" id="result"></h4>
+                </div> -->
+            </div>
+            <div class="card-footer">God Bless Your Relationship</div>
+          </div>
+      </header>
+      <section class="form_sec">
+          <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"><i class="fas fa-user-alt"></i></th>
+                <th scope="col"><i class="fas fa-heart"></i></th>
+                <th scope="col"><i class="fas fa-heart"></i></th>
+                <th scope="col"><i class="fas fa-percentage"></i></th>
+                <th scope="col"><i class="far fa-clock"></i></th> 
+                <th scope="col"><i class="far fa-thumbs-down"></i></th>
+                <th scope="col"><i class="far fa-thumbs-up "></i></th>
+                <th scope="col"><i class="fas fa-trash-alt"></i></th>
+              </tr>
+            </thead>
+            <tbody id="table_data">
+              
+            </tbody>
+          </table>
+        </div>
+      </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+<script src="./script.js"></script>
+</html>
